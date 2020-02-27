@@ -45,6 +45,12 @@
   width: 75%;
 }
 
+.one-full {
+  padding-right: 100px;
+  padding-left: 100px;
+  text-align: center;
+}
+
 .v-room {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -99,8 +105,17 @@ a:focus {
 h1 {
   font-size: 300%;
   font-weight: 900;
-  line-height: 120%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+h1,
+h2 {
+  padding-top: 10px;
   padding-bottom: 20px;
+  line-height: 120%;
 }
 
 p {
@@ -221,7 +236,7 @@ p {
 #jumbotron {
   position: relative;
   min-height: 600px;
-  background-color: #FFF4EF;
+  background-color: #FFF3EE;
   background-image: url('../img/jumbotron.png');
   background-size: 1500px;
   background-repeat: no-repeat;
@@ -239,11 +254,6 @@ p {
   border-top: 3px solid #33475b;
 }
 
-/* #jumbotron h1 > div > div {
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
-
 /* Main */
 
 /* Main - Products Section */
@@ -252,8 +262,8 @@ p {
   min-height: 1500px;
 }
 
-#powerful {
-  text-align: center;
+#integrations img {
+  height: 200px;
 }
 
 #freehubspotcrm,
