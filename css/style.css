@@ -56,6 +56,11 @@
   padding-bottom: 50px;
 }
 
+.h-room {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
 .submenu::after,
 .submenu::before {
   display: inline-block;
@@ -93,6 +98,28 @@
   margin-bottom: 30px;
 }
 
+.list-inline li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.list-inline li::before {
+  content: '\f058';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 10px;
+  color: #ff7a59;
+}
+
+.list-inline {
+
+}
+
 /* Typography */
 a,
 a:hover,
@@ -111,11 +138,22 @@ h2 {
   font-size: 200%;
 }
 
+h3 {
+  font-size: 140%;
+}
+
+h4 {
+  font-size: 110%;
+}
+
 h1,
-h2 {
+h2,
+h3,
+h4 {
   padding-top: 10px;
   padding-bottom: 20px;
   line-height: 120%;
+  font-weight: 900;
 }
 
 p {
@@ -266,7 +304,7 @@ p {
   height: 200px;
 }
 
-#freehubspotcrm,
+#main-product,
 .product {
   background-color: white;
   min-height: 300px;
@@ -276,6 +314,34 @@ p {
   margin-bottom: 20px;
   padding: 30px;
 }
+
+#main-product img {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#main-product > div > div {
+  text-align: center;
+}
+
+.line {
+  position: relative;
+}
+
+.line::after {
+  content: '';
+  position: absolute;
+  width: 360px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  top: 40%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #33475B;
+}
+
+
 
 /* Main - Gradient Section ("Learn and grow") */
 #learn-and-grow {
