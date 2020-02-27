@@ -25,6 +25,14 @@
   width: 25%;
 }
 
+.one-third {
+  width: calc(100%/3);
+}
+
+.two-third {
+  width: calc(100%/1.5);
+}
+
 .one-half {
   width: 50%;
 }
@@ -72,10 +80,25 @@ header {
 
 /* Main */
 
-/* Main - Central Section ("Powerful Alone") */
-#powerful {
+/* Main - Products Section */
+#products {
   background-color: #F5F8FA;
   min-height: 1500px;
+}
+
+#powerful {
+  text-align: center;
+}
+
+#freehubspotcrm,
+.product {
+  background-color: white;
+  min-height: 300px;
+  box-shadow: 0 0 4px #ddd;
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
 }
 
 /* Main - Gradient Section ("Learn and grow") */
@@ -89,7 +112,6 @@ header {
   min-height: 400px;
   background-color: grey;
 }
-
 
 /* Main - Start growing with Hubspot */
 #start-growing {
