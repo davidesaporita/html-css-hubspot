@@ -1,9 +1,119 @@
 /* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Utilities */
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.float {
+  float: left;
+}
+
+.one-fourth {
+  width: 25%;
+}
+
+.one-half {
+  width: 50%;
+}
+
 
 /* Typography */
 
+/* Header */
+header {
+
+}
+
+/* Header - Fixed Bar (da fissare in alto nella viewport) */
+#fixed-bar,
+#navigation {
+  height: 85px;
+}
+
+#fixed-bar {
+  background-color: #cbd6e2;
+  border-bottom: 1px solid #33475b;
+}
+
+/* Header - Main Menu */
+#navigation {
+  background: #fff;
+}
+
+/* Header - Jumbotron */
+#jumbotron {
+  position: relative;
+  background-color: #FFF4EF;
+  min-height: 670px;
+}
+
+#jumbotron::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #AFEBE4;
+  border-bottom: 3px solid #33475b;
+}
+
 /* Main */
 
+/* Main - Central Section ("Powerful Alone") */
+#powerful {
+  background-color: #F5F8FA;
+  min-height: 1500px;
+}
+
+/* Main - Gradient Section ("Learn and grow") */
+#learn-and-grow {
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  min-height: 900px;
+}
+
+/* Main - Customers */
+#customers {
+  min-height: 400px;
+  background-color: grey;
+}
+
+
+/* Main - Start growing with Hubspot */
+#start-growing {
+  min-height: 600px;
+  background-color: white;
+}
+
 /* Footer */
+#footer {
+  min-height: 760px;
+  background-color: #33475b;
+}
+
+#footer-nav {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#languages {
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+
+#copyright {
+  padding-top: 50px;
+}
