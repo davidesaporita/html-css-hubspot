@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
 }
 
 /* Utilities */
@@ -33,32 +34,92 @@
   width: calc(100%/1.5);
 }
 
+.three-fourth {
+  width: 75%;
+}
+
 .one-half {
   width: 50%;
 }
 
 
 /* Typography */
-
-/* Header */
-header {
-
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #566876; /* provvisorio*/
 }
 
+/* Header */
+
 /* Header - Fixed Bar (da fissare in alto nella viewport) */
-#fixed-bar,
-#navigation {
+#navigation,
+#fixed-bar {
   height: 85px;
+  line-height: 85px;
+  text-transform: capitalize;
+  overflow: hidden;
+  font-weight: 500;
 }
 
 #fixed-bar {
-  background-color: #cbd6e2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  /* padding-bottom: 80px */
+}
+
+#fixed-bar > div {
+  position: relative;
+}
+
+#fixed-bar > div > div {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+#logo img {
+  vertical-align: middle;
+}
+
+#fixed-bar {
+  background-color: #f4f9fd;
   border-bottom: 1px solid #33475b;
 }
 
 /* Header - Main Menu */
 #navigation {
+  margin-top: 85px;
   background: #fff;
+}
+
+#main-menu {
+  text-align: right;
+}
+
+#main-menu > nav ul {
+  list-style: none;
+}
+
+#main-menu > nav ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.submenu::after {
+  content: '\f078';
+  display: inline-block;
+  padding-left: 20px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Header - Jumbotron */
