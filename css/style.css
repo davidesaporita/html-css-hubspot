@@ -84,6 +84,7 @@
   min-width: 200px;
   height: 75px;
   line-height: 75px;
+  margin-bottom: 30px;
 }
 
 /* Typography */
@@ -107,6 +108,10 @@ p {
   font-weight: 500;
   line-height: 150%;
   padding-bottom: 20px;
+}
+
+.subtext {
+  font-size: 80%;
 }
 
 /* Header */
