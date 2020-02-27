@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -42,6 +43,21 @@
   width: 50%;
 }
 
+.submenu::after,
+.submenu::before {
+  display: inline-block;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.submenu::after {
+  content: '\f078';
+  padding-left: 15px;
+}
 
 /* Typography */
 a,
@@ -50,6 +66,19 @@ a:active,
 a:focus {
   text-decoration: none;
   color: #566876; /* provvisorio*/
+}
+
+.button {
+  display: inline-block;
+  height: 45px;
+  min-width: 100px;
+  line-height: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ff7a59;
+  border-radius: 3px;
+  text-align: center;
+  color: #fffaf9;
 }
 
 /* Header */
@@ -69,7 +98,6 @@ a:focus {
   position: fixed;
   top: 0;
   z-index: 10;
-  /* padding-bottom: 80px */
 }
 
 #fixed-bar > div {
@@ -91,6 +119,51 @@ a:focus {
   border-bottom: 1px solid #33475b;
 }
 
+#top-menu .submenu::after {
+  padding-left: 5px;
+}
+
+#top-menu .submenu::before {
+  content: '\f7a2';
+  padding-right: 5px;
+}
+
+#top-menu .divider {
+  position: relative;
+}
+
+#top-menu .divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20%;
+  background: #33475b;
+}
+
+/* Header - Fixed bar - Login */
+
+#login-section {
+  text-align: right;
+}
+
+#login-section > div {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+#search > i {
+  color: #00A4BD;
+}
+
+#login .button {
+  background-color: transparent;
+  border: 1px solid #ff7a59;
+  color: #ff7a59;
+}
+
 /* Header - Main Menu */
 #navigation {
   margin-top: 85px;
@@ -101,26 +174,16 @@ a:focus {
   text-align: right;
 }
 
-#main-menu > nav ul {
-  list-style: none;
+#header nav > ul > li {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-#main-menu > nav ul li {
-  display: inline-block;
-  padding-right: 20px;
+#header nav > ul > li:first-of-type {
+  padding-left: 0px;
 }
 
-.submenu::after {
-  content: '\f078';
-  display: inline-block;
-  padding-left: 20px;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
 
 /* Header - Jumbotron */
 #jumbotron {
