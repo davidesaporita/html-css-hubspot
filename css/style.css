@@ -91,10 +91,21 @@
   color: #fffaf9;
 }
 
+.button:hover {
+  background-color: #ffbcac;
+  color: #fff;
+}
+
+.button:focus {
+  background-color: #e66e50;
+  color: #fff;
+}
+
 .button.cta {
-  min-width: 200px;
-  height: 65px;
-  line-height: 65px;
+  min-width: 180px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -245,9 +256,17 @@ p {
 }
 
 #login .button {
-  background-color: transparent;
+  background-color: #fafcfe;
   border: 1px solid #ff7a59;
   color: #ff7a59;
+}
+
+#login .button:hover {
+  background-color: #fff1ee;
+}
+
+#login .button:active {
+  background-color: #ffbcac;
 }
 
 /* Header - Main Menu */
@@ -318,20 +337,13 @@ p {
   position: relative;
   text-align: center;
   background-color: #F5F8FA;
-  height: 700px;
+  height: 750px;
 }
 
 .card {
-  box-shadow: 0 0 4px #ddd;
+  box-shadow: 0 0 11px #eaf0f6;
   border-radius: 2px;
   background-color: white;
-  padding: 30px;
-}
-
-#three-products .card {
-  box-shadow: 0 0 4px #ddd;
-  border-radius: 2px;
-  background-color: #fff;
   padding: 30px;
 }
 
@@ -504,6 +516,13 @@ p {
   color: #cbd6e2;
 }
 
+#footer-nav a:hover,
+#footer-nav i:hover,
+#copyright a:hover,
+#languages a:hover {
+  color: #7fd1de;
+}
+
 /* Footer - Footer Navigation */
 
 .bottom-category-menu {
@@ -512,18 +531,23 @@ p {
 }
 
 .bottom-category-menu i {
-  padding-right: 5px;
-  font-size: 100%;
+  padding-right: 10px;
+  font-size: 110%;
 }
 
 #footer-nav .button {
-  background-color: #cbd6e2;
+  background-color: #ffffff;
   color: #33475b;
   font-size: 14px;
   height: 40px;
   line-height: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#footer-nav a.button {
+  background-color: #ffffff;
+  color: #33475b;
 }
 
 #languages {
@@ -538,4 +562,8 @@ p {
 
 #copyright .list-inline {
   text-align: right;
+}
+
+.logo-footer {
+  padding-bottom: 10px;
 }
