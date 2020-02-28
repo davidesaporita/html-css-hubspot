@@ -428,21 +428,28 @@ p {
   font-size: 300%;
 }
 
-/* #vip-customers > .container > .one-fourth {
-
-} */
-
 #vip-customers img {
   width: 110px;
 }
 
-
-
 /* Main - Start growing with Hubspot */
 #start-growing {
-  min-height: 600px;
   background-color: white;
 }
+
+.image {
+  position: relative;
+  height: 350px;
+}
+
+.image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+}
+
 
 /* Footer */
 #footer {
