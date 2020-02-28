@@ -445,7 +445,22 @@ p {
   font-size: 300%;
 }
 
+#vip-customers > div {
+  width: 90%;
+  height: 60px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#vip-customers > div > div {
+  position: relative;
+  height: 60px;}
+
 #vip-customers img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   width: 110px;
 }
 
@@ -464,7 +479,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 50%;
+  width: 60%;
 }
 
 
