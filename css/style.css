@@ -421,8 +421,22 @@ p {
 /* Main - Customers */
 #customers {
   min-height: 400px;
-  background-color: grey;
+  background-color: white;
 }
+
+#customers h2{
+  font-size: 300%;
+}
+
+/* #vip-customers > .container > .one-fourth {
+
+} */
+
+#vip-customers img {
+  width: 110px;
+}
+
+
 
 /* Main - Start growing with Hubspot */
 #start-growing {
