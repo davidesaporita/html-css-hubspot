@@ -93,8 +93,8 @@
 
 .button.cta {
   min-width: 200px;
-  height: 75px;
-  line-height: 75px;
+  height: 65px;
+  line-height: 65px;
   margin-bottom: 30px;
 }
 
@@ -151,7 +151,7 @@ h2,
 h3,
 h4 {
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   line-height: 120%;
   font-weight: 900;
 }
@@ -160,7 +160,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .subtext {
@@ -273,8 +273,8 @@ p {
 /* Header - Jumbotron */
 #jumbotron {
   position: relative;
-  min-height: 600px;
-  background-color: #FFF3EE;
+  min-height: 700px;
+  background-color: #fdf7f0;
   background-image: url('../img/jumbotron.png');
   background-size: 1500px;
   background-repeat: no-repeat;
@@ -312,25 +312,44 @@ p {
   margin-bottom: 20px;
 }
 
-.product:nth-of-type(2) {
-
-}
-
 .one-third.product {
+  position: relative;
   text-align: center;
   background-color: #F5F8FA;
+  height: 700px;
 }
 
 .card {
-  /* width: 90%; */
   box-shadow: 0 0 4px #ddd;
   border-radius: 2px;
   background-color: white;
   padding: 30px;
 }
 
-.one-third .card {
+#three-products .card {
+  box-shadow: 0 0 4px #ddd;
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 30px;
+}
 
+.product > .card {
+  position: absolute;
+  top: 0;
+  width: calc(100% - 100px / 3);
+}
+
+.product:nth-child(1) > .card {
+  left: 0;
+}
+
+.product:nth-child(2) > .card {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product:nth-child(3) > .card {
+  right: 0;
 }
 
 #products img {
@@ -353,7 +372,7 @@ p {
   height: 1px;
   padding: 0;
   margin: 0;
-  top: 40%;
+  top: 33%;
   right: 0;
   transform: translateY(-50%);
   background-color: #33475B;
@@ -420,7 +439,6 @@ p {
 
 /* Main - Customers */
 #customers {
-  min-height: 400px;
   background-color: white;
 }
 
@@ -458,10 +476,6 @@ p {
   padding-bottom: 30px;
 }
 
-#footer-nav {
-
-}
-
 #footer-nav h4 {
   color: white;
 }
@@ -487,6 +501,11 @@ p {
 #footer-nav .button {
   background-color: #cbd6e2;
   color: #33475b;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #languages {
@@ -496,7 +515,7 @@ p {
 }
 
 #copyright {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 #copyright .list-inline {
