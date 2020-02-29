@@ -86,6 +86,8 @@
   padding-left: 15px;
   background-color: #ff7a59;
   border-radius: 3px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
   text-align: center;
   color: #fffaf9;
@@ -345,6 +347,14 @@ p {
   border-radius: 2px;
   background-color: white;
   padding: 30px;
+  transform: scale(1.00);
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+  transform: scale(1.02);
+  transition: 0.4s ease-in-out;
 }
 
 .product > .card {
@@ -358,8 +368,8 @@ p {
 }
 
 .product:nth-child(2) > .card {
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 0 auto;
 }
 
 .product:nth-child(3) > .card {
@@ -491,9 +501,9 @@ p {
 .image img {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 60%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 66%;
 }
 
 
@@ -511,8 +521,7 @@ p {
 #footer-nav a,
 #footer-nav i,
 #languages a,
-#copyright a,
-#copyright p.subtext {
+#copyright a {
   color: #cbd6e2;
 }
 
@@ -562,6 +571,10 @@ p {
 
 #copyright .list-inline {
   text-align: right;
+}
+
+#copyright .subtext {
+  color: white;
 }
 
 .logo-footer {
