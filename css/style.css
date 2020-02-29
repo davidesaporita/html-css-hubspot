@@ -292,25 +292,47 @@ p {
 }
 
 /* Header - Jumbotron */
-#jumbotron {
+#jumbo-background {
   position: relative;
   min-height: 700px;
-  background-color: #fdf7f0;
+  background-image: linear-gradient(to top right, #fef8f0, #fff3ee, #fff1ee);
+  overflow: hidden;
+}
+
+#jumbotron {
+  content: '';
   background-image: url('../img/jumbotron.png');
   background-size: 1500px;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: 50% 103%;
 }
 
-#jumbotron::after {
+#jumbotron .container {
+  position: relative;
+  min-height: 700px;}
+
+#jumbotron .container::before {
   content: '';
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 82px;
-  background-color: #AFEBE4;
-  border-bottom: 3px solid #33475b;
-  border-top: 3px solid #33475b;
+  bottom: 0.21%;
+  right: 100%;
+  width: 100vh;
+  height: 11.42%;
+  background-color: #a9eae1;
+  border-bottom: 3.05px solid #33475b;
+  border-top: 3.05px solid #33475b;
+}
+
+#jumbotron .container::after {
+  content: '';
+  position: absolute;
+  left: 119.4%;
+  top: 77.47%;
+  height: 21.45%;
+  width: 100vh;
+  background-color: #0aa48c;
+  border-bottom: 3.05px solid #33475b;
+  border-top: 3.05px solid #33475b;
 }
 
 /* Main */
